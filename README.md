@@ -28,12 +28,13 @@ yarn add -D vite-plugin-hide-url-port
 In your vite.config.ts:
 
 ```ts
-import hideUrlsPort from 'vite-plugin-hide-url-port'
+import { hideUrlPort } from 'vite-plugin-hide-url-port'
 
 export default {
   plugins: [
-    hideUrlsPort({
-      port: 443, // Show port 443 in printed URLs. Leave empty to remove port display.
+    hideUrlPort({
+      // Show port 443 in printed URLs. Leave empty to remove port display.
+      port: 443,
     }),
   ],
 }
@@ -49,10 +50,10 @@ Example:
 
 ```ts
 // Show as https://localhost:8080/
-hideUrlsPort({ port: 8080 })
+hideUrlPort({ overridePort: 8080 })
 
 // Show as https://localhost/ (port removed)
-hideUrlsPort()
+hideUrlPort()
 ```
 
 ## 📌 Notes
