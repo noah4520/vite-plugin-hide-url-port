@@ -1,0 +1,44 @@
+{
+  "name": "vite-plugin-hide-url-port",
+  "version": "0.0.0",
+  "description": "A Vite plugin to customize or hide port numbers in dev server console URLs for better Docker/DevContainer/Cloud IDE compatibility",
+  "author": "Noah Chen <hi@noahchen.me>",
+  "type": "module",
+  "packageManager": "pnpm@10.12.1",
+  "main": "dist/main.js",
+  "module": "dist/main.mjs",
+  "types": "dist/main.d.ts",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/noah4520/vite-plugin-hide-url-port/issues"
+  },
+  "homepage": "https://github.com/noah4520/vite-plugin-hide-url-port#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/noah4520/vite-plugin-hide-url-port.git"
+  },
+  "keywords": [
+    "vite-plugin",
+    "url",
+    "port"
+  ],
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "rolldown -c",
+    "format": "prettier --write /src",
+    "lint": "oxlint . --fix -D correctness suspicious perf --ignore-path .gitignore",
+    "play": "cd example && pnpm dev",
+    "test": "vitest"
+  },
+  "devDependencies": {
+    "oxlint": "^1.2.0",
+    "prettier": "3.5.3",
+    "rolldown": "1.0.0-beta.18",
+    "rolldown-plugin-dts": "^0.13.11",
+    "typescript": "^5.8.3",
+    "vite": "^6.3.5",
+    "vitest": "^3.2.4"
+  }
+}
