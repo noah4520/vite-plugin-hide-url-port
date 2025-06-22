@@ -1,6 +1,6 @@
 {
   "name": "vite-plugin-hide-url-port",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A Vite plugin to customize or hide port numbers in dev server console URLs for better Docker/DevContainer/Cloud IDE compatibility",
   "author": "Noah Chen <hi@noahchen.me>",
   "type": "module",
